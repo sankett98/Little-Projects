@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle{
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+#hero{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 40px;
+    color: white;
+}
+#nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+#nav button{
+    color: white;
+}
+
+button {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 16px;
+  font-size: 16px;
+  
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #ff6d6d; */
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 47, 47, 0.896);
+  z-index: 1;
+  border-radius: 10px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #264b21; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #6cd163; 
+
+}
+
+
+
+
+
+#heading {
+    margin-top: 90px;
+}
+#heading h1{ 
+    margin-left: 30px;
+    opacity: .6;
+    line-height: 1;
+    font-size: 9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#heading #secondh1 {
+    margin-left: 15vw;
+}
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    line-height: 2;
+}
+.blocktext h5{
+
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+}
+
+#chotiheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    margin-top: 100px;
+    padding-right: 50px;
+}
+
+#chotiheadings h5{
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size: 14px;
+    text-align: right;
+}
+#herofooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#herofooter a{
+    color: white;
+    height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#herofooter a:hover{
+    border-bottom: 1px solid white;
+}
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#second{
+    color: white;
+    padding-right: 10vw;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right:0 ;
+    border-top: 1px solid grey;
+    cursor: pointer;
+}
+.elem h1 {
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 7vw;
+    opacity: .7; 
+    transition: opacity 0.5s ease-in-out;
+
+}
+.elem h1:hover {
+  opacity: 0.2;
+}
+
+.elemlast {
+    border-bottom: 1px solid grey;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+#about{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 300px;
+    padding: 10vw 25vw;
+    padding-left: 40vw;
+    width: 100%;   
+}
+#txtabout{
+    width: 25rem;
+}
+#txtabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+#txtabout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+#about img{
+    width: 215px;
+
+}
+#txtabout a{
+    padding: 12px 22px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+}
+#txtabout a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+#subs{
+    color: white;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+
+}
+#subs h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+#subs a{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+#subs a:hover{
+    border-bottom: 1px solid white;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    
+}
+
+#footerleft{
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footerright a:hover{
+    border-bottom: 1px solid white;
+}
+#footer a {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
